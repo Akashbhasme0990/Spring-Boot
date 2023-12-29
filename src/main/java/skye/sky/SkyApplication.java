@@ -22,9 +22,6 @@ public class SkyApplication {
 //	public CommandLineRunner commandLineRunner1(UserDAO userDAO){
 //		return runner ->{createUser(userDAO);};
 //	}
-	private  String newStr(){
-		return  "hello world";
-	}
 
 	private void createUser(UserDAO userDAO) {
 		User tempUser= new User(123476,"akashbhasme9@gmail.com", "akash9", "sky@201", "imagess", "biooooo");
