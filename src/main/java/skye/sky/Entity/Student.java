@@ -3,9 +3,8 @@ package skye.sky.Entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="student")
+@Table(name="student",uniqueConstraints = {@UniqueConstraint(columnNames = "email")})
 public class Student {
-//    define the fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -14,7 +13,7 @@ public class Student {
     private String firstname;
     @Column(name = "last_name")
     private String lastname;
-    @Column(name = "email")
+    @Column(name = "email",unique = true)
     private String email;
 //    define constructors
     public Student() {

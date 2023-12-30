@@ -32,9 +32,9 @@ public class SkyApplication {
 	public CommandLineRunner commandLineRunner (StudentDAO studentDAO){
 		return runner ->{
 			createStudent(studentDAO);
-			readStudent(studentDAO);
+//			readStudent(studentDAO);
 //			queryForStudents(studentDAO);
-			queryForStudentsLastname(studentDAO);
+//			queryForStudentsLastname(studentDAO);
 ////			updateStudent(studentDAO);
 //			deleteStudent(studentDAO);
 //			deleteMultipleRows(studentDAO);
